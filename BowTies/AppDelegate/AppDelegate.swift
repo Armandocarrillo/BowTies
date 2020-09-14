@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    
+    /*
     //Save test bow tie
     let bowtie = NSEntityDescription.insertNewObject(forEntityName: "BowTie", into: self.persistentContainer.viewContext) as! BowTie
     
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       print("Test failed.")
     }
     
-    
+    */
     return true
   }
 
