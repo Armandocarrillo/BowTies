@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100340CC250FA57300403005 /* BowTie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100340CA250FA57300403005 /* BowTie+CoreDataClass.swift */; };
+		100340CD250FA57300403005 /* BowTie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100340CB250FA57300403005 /* BowTie+CoreDataProperties.swift */; };
 		FEC6D47822ECFEB0004D739C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6D47722ECFEB0004D739C /* AppDelegate.swift */; };
 		FEC6D47A22ECFEB0004D739C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6D47922ECFEB0004D739C /* SceneDelegate.swift */; };
 		FEC6D47C22ECFEB0004D739C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6D47B22ECFEB0004D739C /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100340CA250FA57300403005 /* BowTie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BowTie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		100340CB250FA57300403005 /* BowTie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BowTie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FEC6D47422ECFEB0004D739C /* BowTies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BowTies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC6D47722ECFEB0004D739C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BowTies/AppDelegate/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		FEC6D47922ECFEB0004D739C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 		100340C8250F956300403005 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				100340CA250FA57300403005 /* BowTie+CoreDataClass.swift */,
+				100340CB250FA57300403005 /* BowTie+CoreDataProperties.swift */,
 				FEC6D48022ECFEB0004D739C /* BowTies.xcdatamodeld */,
 				FEC6D48E22ED01C0004D739C /* SampleData.plist */,
 			);
@@ -188,6 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEC6D47C22ECFEB0004D739C /* ViewController.swift in Sources */,
+				100340CD250FA57300403005 /* BowTie+CoreDataProperties.swift in Sources */,
+				100340CC250FA57300403005 /* BowTie+CoreDataClass.swift in Sources */,
 				FEC6D48222ECFEB0004D739C /* BowTies.xcdatamodeld in Sources */,
 				FEC6D47822ECFEB0004D739C /* AppDelegate.swift in Sources */,
 				FEC6D47A22ECFEB0004D739C /* SceneDelegate.swift in Sources */,
