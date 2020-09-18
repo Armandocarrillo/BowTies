@@ -48,6 +48,21 @@ class ViewController: UIViewController {
   // MARK: - IBActions
 
   @IBAction func segmentedControl(_ sender: UISegmentedControl) {
+    
+    guard  let selectedValue = sender.titleForSegment(at: sender.selectedSegmentIndex) else {
+      return
+    }
+    
+    let request: NSFetchRequest<BowTie> = BowTie.fetchRequest()
+    request.predicate = NSPredicate(format: "%K = %@", argumentArray: [#keyPath(BowTie.searchKey),selectedValue])
+    
+    do {
+      let results = try managedContext.fetch(request)
+      currentBowTie = results.first
+      populate(bowtie: currentBowTie)
+    } catch let error as NSError {
+      print("Could not fetch \(error), \(error.userInfo)")
+    }
 
   }
 
@@ -169,7 +184,13 @@ class ViewController: UIViewController {
       try managedContext.save()
       populate(bowtie: currentBowTie)
     } catch let error as NSError {
-      print("Could not save \(error), \(error.userInfo)")
+      // to reopen the alert to get a new rate
+      if error.domain == NSCocoaErrorDomain && (error.code == NSValidationNumberTooLargeError || error.code == NSValidationNumberTooLargeError) {
+        rate(rateButton)
+      } else {
+        print("Could not save \(error), \(error.userInfo)")
+      }
+      
     }
 
   }
